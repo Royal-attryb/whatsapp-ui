@@ -1,0 +1,30 @@
+.button-wrapper {
+    width: 210.94px;
+    height: 26.18px;
+    border-radius: 2.99px;
+    padding: 5.98px;
+    background: white;
+    margin-top: 2.99px;
+    text-align: center;
+    line-height: 14px;
+}
+
+.button-wrapper a {
+    color: #0096DE;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+.button-wrapper a:hover {
+    outline: auto;
+}
+
+.icon {
+    margin-right: 2.99px;
+    vertical-align: middle;
+}
+
+.button-wrapper span {
+    font-size: 12px;
+    font-weight: 400;
+}

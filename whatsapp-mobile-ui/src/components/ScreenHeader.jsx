@@ -5,14 +5,32 @@ import Call from '../images/Call.svg';
 import More from '../images/More.svg';
 import Verified from '../images/verified.svg';
 import BatteryWifi from '../images/BatteryWifi.svg';
+import { useState, useEffect } from 'react';
 
 export default function ScreenHeader () {
-    const hr = 1, min = 30;
+
+    const [today, setDate] = useState(new Date());
+    const liveTime = function () {
+        const currDate = new Date();
+
+        setDate(currDate);
+    }
+
+    useEffect(() => {
+        const timer = setInterval(liveTime, 60 * 1000);
+
+        return () => {
+            clearInterval(timer);
+        }
+    }, []);
+    
+    
+
     return (
         <div className="screen-header">
             <div className='screen-header-time'>
                 <div className='header-time'>
-                    <span>{hr}:{min}</span>
+                    <span>{today.getHours()}:{today.getMinutes()}</span>
                 </div>
                 <img src={BatteryWifi}></img>
             </div>

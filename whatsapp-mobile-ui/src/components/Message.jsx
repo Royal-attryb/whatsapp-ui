@@ -8,9 +8,9 @@ import image from '../images/BubbleVector.svg';
 
 export default function Message () {
     return (
-        <div className="message-wrapper">
-            <div className='message-content-wrapper'>
-                <img className="bubblevector" src={image}></img>
+        <div className='message-container'>
+            <img src={image} className='bubblevector'></img>
+            <div className="message-wrapper">
                 <div className="message-content">
                     <Header />
                     <br />
@@ -19,12 +19,10 @@ export default function Message () {
                     <Footer />
                     <TimeStamp />
                 </div>
+                <div className="buttons">
+                    <Button />
+                </div>   
             </div>
-            <div className="buttons">
-                <Button />
-                <Button />
-            </div>
-            
         </div>
     );
 }

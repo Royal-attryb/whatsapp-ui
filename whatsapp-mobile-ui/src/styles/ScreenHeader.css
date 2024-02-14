@@ -65,3 +65,7 @@
     color: white;
 }
 
+.header-time span {
+    margin: auto;
+    vertical-align: middle;
+}
