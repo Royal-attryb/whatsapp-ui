@@ -1,0 +1,26 @@
+.message-wrapper {
+    width: 263.3px;
+    /* height: 267.31px; */
+}
+
+.message-content {
+    width: 210.97px;
+    height: 100%;
+    background: white;
+    padding: 5.98px;
+    border-radius: 0 2.99px 2.99px 2.99px;
+    font-size: 11.97px;
+    line-height: 14.03px;   
+}
+
+.message-content-wrapper {
+    display: flex;
+}
+
+.bubblevector {
+    align-self: flex-start;
+    margin-top: -0.04px;
+    margin-right: 0.01px;
+    height: 5.24px;
+    width: 5.24px;
+}

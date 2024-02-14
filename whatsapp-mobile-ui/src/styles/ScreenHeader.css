@@ -1,0 +1,67 @@
+.screen-header-time {
+    display: flex;
+    width: 269.29px;
+    height: 14.96px;
+    background: #054D47;
+    border-radius: 8.98px 8.98px 0 0;
+    align-items: center;
+    padding: 1.5px 11.97px 1.5px 11.97px;
+    justify-content: space-between;
+}
+
+.screen-header-data {
+    width: 269.29px;
+    height: 47.87px;
+    background: #085B53;
+    padding: 11.97px 8.98px 11.97px 8.98px;
+    display: flex;
+}
+
+.business-data {
+    width: 179.52px;
+    height: 23.94px;
+    display: flex;
+    align-items: center;
+}
+
+.arrowback {
+    margin-right: 2.99px;
+}
+
+.call {
+    margin-left: 2.99px;
+    margin-right: 11.97px;
+}
+
+.arrowback, .business-data, .call, .more {
+    align-self: center;
+}
+
+.business-logo {
+    margin-right: 5.98px;
+}
+
+.business-name {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 2.99px;
+    color: white;
+}
+
+.business-name-wrapper {
+    width: 149.6px;
+}
+
+.header-time {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
