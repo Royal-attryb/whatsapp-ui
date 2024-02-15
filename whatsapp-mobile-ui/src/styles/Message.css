@@ -4,6 +4,7 @@
 
 .message-wrapper {
     width: 263.3px;
+    margin-bottom: 8px; 
 }
 
 .message-content {
@@ -12,7 +13,7 @@
     padding: 5.98px;
     border-radius: 0 2.99px 2.99px 2.99px;
     font-size: 11.97px;
-    line-height: 14.03px;   
+    line-height: 14.03px; 
 }
 
 .bubblevector {

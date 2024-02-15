@@ -17,20 +17,22 @@ export default function ScreenHeader () {
     }
 
     useEffect(() => {
-        const timer = setInterval(liveTime, 60 * 1000);
-
-        return () => {
-            clearInterval(timer);
-        }
+        liveTime();
     }, []);
     
-    
+    const timeFormat = () => {
+        const hrs = today.getHours(), mins = today.getMinutes();
+
+        return (
+            {'hours': (hrs < 10) ? `${'0' + hrs}` : hrs, 'minutes': (mins < 10) ? `${'0' + mins}` : mins}
+        );
+    }
 
     return (
         <div className="screen-header">
             <div className='screen-header-time'>
                 <div className='header-time'>
-                    <span>{today.getHours()}:{today.getMinutes()}</span>
+                    <span>{timeFormat().hours}:{timeFormat().minutes}</span>
                 </div>
                 <img src={BatteryWifi}></img>
             </div>

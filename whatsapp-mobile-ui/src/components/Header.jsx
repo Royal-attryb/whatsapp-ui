@@ -2,9 +2,10 @@ import '../styles/Header.css';
 import ImgFallback from '../images/ImgFallback.svg';
 import DocFallback from '../images/DocFallback.svg';
 
-export default function Header ({format, text, header_handle}) {
+export default function Header ({header}) {
 
-    const textInput = (<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>);
+    console.log("Header", header);
+    const text = (<p className='text'>{header.text}</p>);
     const image = (
         <div className='media-container'>
             <img className='media' src={ImgFallback}></img>
@@ -13,7 +14,7 @@ export default function Header ({format, text, header_handle}) {
 
     const video = (
         <div className='media-container'>
-            <video className='media' src=""></video>
+            <video className='media' src={ImgFallback}></video>
         </div>
     );
 
@@ -22,12 +23,24 @@ export default function Header ({format, text, header_handle}) {
             <img className='media' src={DocFallback}></img>
         </div>
     );
+
+    const handleDisplay = () => {
+        if (header.format === 'TEXT')
+            return text;
+
+        else if (header.format === 'IMAGE')
+            return image;
+
+        else if (header.format === 'VIDEO')
+            return video;
+
+        else if (header.format === 'DOCUMENT')
+            return doc;
+    }
+
     return (
         <>
-            {/* {textInput} */}
-            {/* {image} */}
-            {doc}
-            {/* {video} */}
+            {handleDisplay()}
         </>
     )
 }

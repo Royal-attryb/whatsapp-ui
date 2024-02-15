@@ -6,7 +6,13 @@ import Header from './Header';
 import TimeStamp from './TimeStamp';
 import image from '../images/BubbleVector.svg';
 
-export default function Message () {
+export default function Message ({template}) {
+
+    const header = template.components.filter((comp) => (comp.type === 'HEADER'))[0];
+    const body = template.components.filter((comp) => (comp.type === 'BODY'))[0];
+    const footer = template.components.filter((comp) => (comp.type === 'FOOTER'))[0];
+    const buttons = template.components.filter((comp) => (comp.type === 'BUTTONS'))[0].buttons;
+    
     return (
         <div className='message-container'>
             {/* <img src={image} className='bubblevector'></img> */}
@@ -15,15 +21,15 @@ export default function Message () {
             </span>
             <div className="message-wrapper">
                 <div className="message-content">
-                    <Header />
+                    <Header header={header} />
                     <br />
-                    <Body />
+                    <Body body={body} />
                     <br />
-                    <Footer />
+                    <Footer footer={footer} />
                     <TimeStamp />
                 </div>
                 <div className="buttons">
-                    <Button />
+                    {buttons.map((button) => (<Button button={button}/>))}
                 </div>   
             </div>
         </div>

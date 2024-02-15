@@ -23,10 +23,11 @@
     height: 13px;
     width: 13px;
     margin-right: 2.99px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .button-wrapper span {
     font-size: 12px;
     font-weight: 400;
+    vertical-align: bottom;
 }

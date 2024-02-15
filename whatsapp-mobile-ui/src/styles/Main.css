@@ -6,7 +6,8 @@
 .screen {
     margin: 5rem auto;
     width: 269.29px;
-    height: 567px;
+    /* height: 567px; */
     background: #E8E0D5;
     border-radius: 8.98px;
+    overflow: hidden;
 }

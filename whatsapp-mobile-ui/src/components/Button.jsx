@@ -3,8 +3,8 @@ import urlIcon from '../images/url-icon.svg';
 import callIcon from '../images/call-icon.svg';
 import copyIcon from '../images/copycode-icon.svg';
 
-export default function Button ({type, text, phone_number, url, example}) {
-
+export default function Button ({button}) {
+    // console.log(button);
     const urlButton = (
         <div className='button-wrapper'>
             <a href="#">
@@ -41,12 +41,23 @@ export default function Button ({type, text, phone_number, url, example}) {
         </div>
     );
 
+    const displayButtons = () => {
+        if (button.type === 'COPY_CODE')
+            return copyCodeButton;
+
+        else if (button.type === 'QUICK_REPLY')
+            return quickReply;
+
+        else if (button.type === 'PHONE_NUMBER')
+            return callButton;
+
+        else
+            return urlButton;
+    }
+
     return (
         <>
-            {urlButton}
-            {callButton} 
-            {copyCodeButton} 
-            {quickReply}  
+            {displayButtons()}
         </>
     )
 }
