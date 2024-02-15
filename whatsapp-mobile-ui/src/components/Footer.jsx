@@ -1,7 +1,7 @@
 import '../styles/Footer.css';
 
-export default function Footer () {
+export default function Footer ({text}) {
     return (
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p className='footer'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     )
 }

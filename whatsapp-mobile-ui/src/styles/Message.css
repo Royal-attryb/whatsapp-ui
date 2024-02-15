@@ -16,9 +16,10 @@
 }
 
 .bubblevector {
-    align-self: flex-start;
-    margin-top: -0.04px;
-    margin-right: 0.01px;
-    height: 5.24px;
+    color: white;
     width: 5.24px;
+}
+
+.bubblevector svg {
+    vertical-align: top;
 }

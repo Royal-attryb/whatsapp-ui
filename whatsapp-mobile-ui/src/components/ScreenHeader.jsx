@@ -39,7 +39,7 @@ export default function ScreenHeader () {
                 <div className='business-data'>
                     <img src={BusinessLogo} className='business-logo'></img>
                     <div className='business-name-wrapper'>
-                        <span className='business-name'>Business name</span>
+                        <span className='business-name'>Tarinika</span>
                         <img src={Verified} className='verified-logo'></img>
                     </div>
                 </div>
