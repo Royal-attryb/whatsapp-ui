@@ -1,5 +1,5 @@
 .screen-input {
-    width: 269.29px;
+    max-width: 269.29px;
     height: 38.9px;
     padding: 1.5px 2.99px 1.5px 2.99px;
     display: flex;
@@ -11,7 +11,7 @@
 
 .message-img {
     border-radius: 26.93px;
-    width: 222.91px;
+    max-width: 222.91px;
 }
 
 .microphone-img {
