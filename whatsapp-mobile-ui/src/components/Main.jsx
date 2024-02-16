@@ -2,6 +2,7 @@ import '../styles/Main.css';
 import ScreenHeader from './ScreenHeader';
 import ScreenInput from './ScreenInput';
 import ScreenMessage from './ScreenMessage';
+import phoneBody from '../images/PhoneBody.png';
 
 export default function Main () {
     const template = {
@@ -66,11 +67,15 @@ export default function Main () {
     // console.log("Template", template);
     return (
         <div className="main-wrapper">
-            <div className="screen">
-                <ScreenHeader />
-                <ScreenMessage template={template}/>
-                <ScreenInput />
-            </div>
+                <div className='phone-body'>
+                    <img src={phoneBody}></img>
+                    <div className="screen">
+                        <ScreenHeader />
+                        <ScreenMessage template={template}/>
+                        <ScreenInput />
+                    </div>
+                </div>
+            
         </div>
     )
 }

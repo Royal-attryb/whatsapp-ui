@@ -1,13 +1,23 @@
 .main-wrapper {
     padding: 2rem;
-    background: black;
+    /* background: black; */
 }
 
 .screen {
-    margin: 5rem auto;
     width: 269.29px;
     /* height: 567px; */
     background: #E8E0D5;
     border-radius: 8.98px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.phone-body {
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: relative;
 }
