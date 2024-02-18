@@ -1,6 +1,6 @@
 .button-wrapper {
-    width: 210.94px;
-    height: 26.18px;
+    max-width: 210.94px;
+    max-height: 26.18px;
     border-radius: 2.99px;
     padding: 5.98px;
     background: white;
@@ -20,8 +20,8 @@
 }
 
 .icon {
-    height: 13px;
-    width: 13px;
+    max-height: 13px;
+    max-width: 13px;
     margin-right: 2.99px;
     /* vertical-align: middle; */
 }

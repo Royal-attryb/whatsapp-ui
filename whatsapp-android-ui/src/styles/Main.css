@@ -1,11 +1,13 @@
 .main-wrapper {
     /* padding: 2rem; */
     /* background: black; */
+    height: 100%;
 }
 
 .screen {
-    width: 269.29px;
-    height: 567px;
+    max-width: 269.29px;
+    width: 88%;
+    max-height: 567px;
     background: #E8E0D5;
     border-radius: 8.98px;
     position: absolute;
@@ -17,7 +19,16 @@
 }
 
 .phone-body {
-    display: inline-block;
+    display: flex;
     /* border: 1px solid red; */
     position: relative;
+    height: 80%;
+}
+
+.img-wrapper img {
+    height: 100%;
+}
+
+.img-wrapper {
+    height: 100%;
 }

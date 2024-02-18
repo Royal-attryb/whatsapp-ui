@@ -68,7 +68,9 @@ export default function Main () {
     return (
         <div className="main-wrapper">
                 <div className='phone-body'>
+                  <div className='img-wrapper'>
                     <img src={phoneBody}></img>
+                  </div>
                     <div className="screen">
                         <ScreenHeader />
                         <ScreenMessage template={template}/>

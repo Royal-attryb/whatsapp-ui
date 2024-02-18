@@ -20,8 +20,8 @@
 }
 
 .cross-container {
-    height: 44px;
-    width: 44px;
+    max-height: 44px;
+    max-width: 44px;
     padding: 15px;
 }
 
