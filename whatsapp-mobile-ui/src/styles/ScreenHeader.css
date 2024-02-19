@@ -1,20 +1,25 @@
+.screen-header {
+    background: #F2F2F2;
+}
+
 .screen-header-time {
     display: flex;
     width: 269.29px;
-    height: 14.96px;
-    background: #054D47;
+    height: 30px;
     border-radius: 8.98px 8.98px 0 0;
-    align-items: center;
-    padding: 1.5px 11.97px 1.5px 11.97px;
+    padding: 8px 11.97px 1.5px 11.97px;
     justify-content: space-between;
 }
 
 .screen-header-data {
     width: 269.29px;
     height: 47.87px;
-    background: #085B53;
     padding: 11.97px 8.98px 11.97px 8.98px;
     display: flex;
+}
+
+.arrowback, .call, .more {
+    height: 65%;
 }
 
 .business-data {
@@ -25,7 +30,7 @@
 }
 
 .arrowback {
-    margin-right: 2.99px;
+    margin-right: 20px;
 }
 
 .call {
@@ -39,6 +44,7 @@
 
 .business-logo {
     margin-right: 5.98px;
+    height: 100%;
 }
 
 .business-name {
@@ -48,24 +54,39 @@
     letter-spacing: 0em;
     text-align: left;
     margin-right: 2.99px;
-    color: white;
-}
-
-.business-name-wrapper {
-    width: 149.6px;
+    vertical-align: baseline;
 }
 
 .header-time {
+    flex: 1;
     display: inline-block;
-    font-size: 9px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
     line-height: 11px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
+    letter-spacing: -0.41px;
+    text-align: center;
+    color: #171717;
+    padding-top: 4px;
 }
 
 .header-time span {
     margin: auto;
-    vertical-align: middle;
+    vertical-align: top;
+    font-family: 'SF Pro Display';
+}
+
+.wifi {
+    flex: 1;
+    height: 80%;
+}
+
+.dynamicIsland {
+    flex: 1;
+    height: 110%;
+    vertical-align: bottom;
+}
+
+.verified-logo {
+    height: 13px;
+    vertical-align: baseline;
 }

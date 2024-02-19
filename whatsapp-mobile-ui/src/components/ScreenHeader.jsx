@@ -1,11 +1,12 @@
 import '../styles/ScreenHeader.css';
 import ArrowBack from '../images/ArrowBack.svg';
 import BusinessLogo from '../images/BusinessLogo.svg';
-import Call from '../images/Call.svg';
-import More from '../images/More.svg';
+import VideoCall from '../images/VideoCall.svg';
+import AudioCall from '../images/AudioCall.svg';
 import Verified from '../images/verified.svg';
-import BatteryWifi from '../images/BatteryWifi.svg';
+import SignalWifiBattery from '../images/SignalWifiBattery.svg';
 import { useState, useEffect } from 'react';
+import DynamicIsland from '../images/DynamicIsland.svg';
 
 export default function ScreenHeader () {
 
@@ -34,7 +35,8 @@ export default function ScreenHeader () {
                 <div className='header-time'>
                     <span>{timeFormat().hours}:{timeFormat().minutes}</span>
                 </div>
-                <img src={BatteryWifi}></img>
+                <img className="dynamicIsland" src={DynamicIsland}></img>
+                <img className="wifi" src={SignalWifiBattery}></img>
             </div>
             <div className='screen-header-data'>
                 <img src={ArrowBack} className='arrowback'></img>
@@ -45,8 +47,8 @@ export default function ScreenHeader () {
                         <img src={Verified} className='verified-logo'></img>
                     </div>
                 </div>
-                <img src={Call} className='call'></img>
-                <img src={More} className='more'></img>
+                <img src={VideoCall} className='call'></img>
+                <img src={AudioCall} className='more'></img>
             </div>
         </div>
     )
