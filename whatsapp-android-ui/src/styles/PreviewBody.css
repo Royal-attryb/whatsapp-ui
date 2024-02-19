@@ -10,14 +10,13 @@
 
 .previewbody-header {
     text-align: center;
-    height: 15%;
     /* border: 1px solid blue; */
     /* margin-bottom: 32px; */
 }
 
 .previewbody-content {
     /* border: 1px solid red; */
-    height: 80%;
+    height: 87%;
     display: flex;
     justify-content: space-around;
     align-items: center;

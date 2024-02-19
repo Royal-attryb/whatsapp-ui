@@ -5,6 +5,9 @@
 }
 
 .screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 269.29px;
     width: 90%;
     height: 90%;
@@ -23,7 +26,8 @@
     display: flex;
     /* border: 1px solid red; */
     position: relative;
-    height: 80%;
+    max-height: 636px;
+    height: 88%;
 }
 
 .img-wrapper img {
