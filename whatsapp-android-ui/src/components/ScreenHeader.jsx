@@ -45,8 +45,10 @@ export default function ScreenHeader () {
                         <img src={Verified} className='verified-logo'></img>
                     </div>
                 </div>
-                <img src={Call} className='call'></img>
-                <img src={More} className='more'></img>
+                <div className='call-more'>
+                    <img src={Call} className='call'></img>
+                    <img src={More} className='more'></img>
+                </div>
             </div>
         </div>
     )
