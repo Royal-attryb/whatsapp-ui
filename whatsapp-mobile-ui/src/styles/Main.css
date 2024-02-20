@@ -2,12 +2,14 @@
     padding: 2rem;
     /* background: black; */
 }
+.body {
+    display: inline-block;
+    position: relative;
+}
 
 .screen {
     width: 269.29px;
     /* height: 567px; */
-    background: #E8E0D5;
-    border-radius: 8.98px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,8 +18,24 @@
     /* border: 1px solid red; */
 }
 
-.phone-body {
-    display: inline-block;
-    /* border: 1px solid red; */
-    position: relative;
+/* android */
+.android-screen {
+    background: #E8E0D5;
+    border-radius: 8.98px;
+}
+
+/* ios */
+.ios-screen {
+    width: 275px;
+    height: 596.2px;
+    background: url('../images/ios/MessageBackground.svg');
+    border-radius: 40px;
+}
+
+.iphone-panel {
+    width: 302px;
+    height: 633px;
+    /* width: 302px;
+    height: 633px; */
+    /* transform: scale(0.7, 0.7); */
 }

@@ -1,6 +1,6 @@
 import '../styles/Header.css';
-import ImgFallback from '../images/ImgFallback.svg';
-import DocFallback from '../images/DocFallback.svg';
+import ImgFallback from '../images/android/ImgFallback.svg';
+import DocFallback from '../images/android/DocFallback.svg';
 
 export default function Header ({header}) {
 
