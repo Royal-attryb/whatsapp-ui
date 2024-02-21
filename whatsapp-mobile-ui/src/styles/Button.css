@@ -1,14 +1,15 @@
 .button-wrapper {
     width: 210.94px;
-    height: 26.18px;
+    height: 25.18px;
     padding: 5.98px;
     background: white;
     text-align: center;
-    line-height: 14px;
 }
 
 .button-wrapper a {
-    color: #0096DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 0em;
     text-decoration: none;
 }
@@ -24,10 +25,11 @@
     /* vertical-align: middle; */
 }
 
-.button-wrapper span {
+.button-wrapper p {
+    display: inline-block;
     font-size: 12px;
     font-weight: 400;
-    vertical-align: bottom;
+    line-height: 12px;
 }
 
 /* android */
@@ -36,9 +38,18 @@
     margin-top: 2.99px;
 }
 
+.android-button-wrapper a {
+    color: #0096DE;
+}
+
 /* ios */
 .ios-button-wrapper {
-    border-top: 1px solid grey;
+    border-top: 1px solid #e8e8e9;
+    
+}
+
+.ios-button-wrapper a {
+    color: #0178ff;
 }
 
 .ios-last-button {

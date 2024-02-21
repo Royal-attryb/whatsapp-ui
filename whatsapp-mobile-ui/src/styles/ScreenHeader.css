@@ -1,12 +1,12 @@
 /* Generic */
 .screen-header-time {
     display: flex;
-    width: 269.29px;
+    /* max-width: 269.29px; */
     justify-content: space-between;
 }
 
 .screen-header-data {
-    width: 269.29px;
+    /* width: 269.29px; */
     height: 47.87px;  
     padding: 11.97px 8.98px 11.97px 8.98px;
     display: flex;
@@ -22,6 +22,10 @@
 .call {
     margin-left: 2.99px;
     margin-right: 11.97px;
+}
+
+.call-more {
+    margin-left: auto;
 }
 
 .arrowback, .business-data, .call, .more {
@@ -124,11 +128,12 @@
 
 .ios-header-time {
     width: 27%;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
-    line-height: 22px;
+    line-height: 14px;
     letter-spacing: -0.40799999237060547px;
     text-align: center;
+    /* vertical-align: bo; */
 }
 
 .ios-arrowback {
@@ -137,16 +142,15 @@
 
 .dynamic-island {
     position: relative;
-    top: 5%;
-    width: 35%;
+    width: 33%;
 }
 
 .ios-battery-wifi {
-    width: 27%;
+    width: 25%;
 }
 
 .camera {
     position: absolute;
-    left: 56.5%;
-    top: 30%;
+    left: 56%;
+    top: 26%;
 }

@@ -56,10 +56,10 @@ export default function ScreenHeader ({os}) {
                         <img src={(os === "android") ? androidVerified : iosVerified} className='verified-logo'></img>
                     </div>
                 </div>
-
-                <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
-                <img src={(os === "android") ? More: iosAudioCall} className='more'></img>
-
+                <div className='call-more'>
+                    <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
+                    <img src={(os === "android") ? More: iosAudioCall} className='more'></img>
+                </div>
             </div>
         </div>
     )

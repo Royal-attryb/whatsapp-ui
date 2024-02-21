@@ -11,7 +11,7 @@ const PreviewBody = () => {
         <h1 className='event'>Valentines Day Sale</h1>
       </div>
       <div className='previewbody-content'>
-        <Main />
+        <Main os="android"/>
       </div>
     </div>
   )

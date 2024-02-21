@@ -8,13 +8,13 @@
     transition: right 0.3s ease-in-out;
     position: fixed;
     height: 100vh;
-    min-width: 335px;
-    width: 15vw;
+    min-width: 300px;
+    width: 20vw;
     right: 0;
 }
 
 .hidesidebar {
-    right: min(-300px);
+    right: min(-20vw, -300px);
 }
 
 .empty {

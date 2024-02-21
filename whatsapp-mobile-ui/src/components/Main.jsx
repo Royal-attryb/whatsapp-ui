@@ -68,8 +68,10 @@ export default function Main ({os}) {
     // console.log("Template", template);
     return (
       <div className="main-wrapper">
+          {/* <div className='phonebody-wrapper'>
+              {(os === "android") ? <img src={phoneBody}></img> : <img src={iPhoneBody}></img>}
+          </div> */}
           <div className={`body ${os}-body`}>
-              {(os === "android") ? <img src={phoneBody}></img> : <img className='iphone-panel' src={iPhoneBody}></img>}
               <div className={`screen ${os}-screen`}>
                   <ScreenHeader os ={os}/>
                   <ScreenMessage template={template} os={os} />
