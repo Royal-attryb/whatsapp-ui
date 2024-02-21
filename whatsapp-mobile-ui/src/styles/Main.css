@@ -65,10 +65,12 @@
     /* width: 275px; */
     /* max-height: 596.2px; */
     background: url('../images/ios/MessageBackground.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 40px;
 }
 
 .ios-body {
     background-image: url("../images/ios/PhoneBody.svg");
-    padding: 10px;
+    padding: 15px;
 }
