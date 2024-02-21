@@ -13,8 +13,8 @@
 }
 
 .business-data {
-    width: 179.52px;
-    height: 23.94px;
+    max-width: 100%;
+    max-height: 23.94px;
     display: flex;
     align-items: center;
 }
@@ -34,10 +34,6 @@
 
 .business-name {
     margin-right: 2.99px;
-}
-
-.business-name-wrapper {
-    width: 149.6px;
 }
 
 .header-time {

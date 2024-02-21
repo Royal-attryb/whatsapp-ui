@@ -1,0 +1,26 @@
+.previewpage-container {
+    background: rgba(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+}
+
+.previewslider-container {
+    transition: right 0.3s ease-in-out;
+    position: fixed;
+    height: 100vh;
+    min-width: 335px;
+    width: 15vw;
+    right: 0;
+}
+
+.hidesidebar {
+    right: min(-300px);
+}
+
+.empty {
+    flex: 1;
+}
+
+.opaque {
+    background: rgba(0, 0, 0, 0.5);
+}

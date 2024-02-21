@@ -7,12 +7,13 @@
 
 .message-img {
     border-radius: 26.93px;
-    width: 222.91px;
+    max-width: 222.91px;
+    width: 80%;
 }
 
 .microphone-img {
     align-self: center;
-    height: 31.98px;
+    max-height: 31.98px;
     /* border: 1px solid red; */
 }
 

@@ -1,6 +1,7 @@
 .main-wrapper {
-    padding: 2rem;
+    /* padding: 2rem; */
     /* background: black; */
+    height: 100%;
 }
 .body {
     display: inline-block;

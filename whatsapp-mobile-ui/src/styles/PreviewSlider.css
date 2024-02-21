@@ -1,0 +1,6 @@
+.preview-container {
+    /* border: 3px solid blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
