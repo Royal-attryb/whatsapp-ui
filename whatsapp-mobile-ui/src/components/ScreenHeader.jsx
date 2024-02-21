@@ -1,13 +1,21 @@
 import '../styles/ScreenHeader.css';
-import ArrowBack from '../images/ArrowBack.svg';
-import BusinessLogo from '../images/BusinessLogo.svg';
-import Call from '../images/Call.svg';
-import More from '../images/More.svg';
-import Verified from '../images/verified.svg';
-import BatteryWifi from '../images/BatteryWifi.svg';
+import androidArrowBack from '../images/android/ArrowBack.svg';
+import iosArrowBack from '../images/ios/ArrowBack.svg';
+import androidBusinessLogo from '../images/android/BusinessLogo.svg';
+import iosBusinessLogo from '../images/ios/BusinessLogo.svg';
+import Call from '../images/android/Call.svg';
+import More from '../images/android/More.svg';
+import iosAudioCall from '../images/ios/AudioCall.svg';
+import iosVideoCall from '../images/ios/VideoCall.svg';
+import androidVerified from '../images/android/Verified.svg';
+import iosVerified from '../images/ios/Verified.svg';
+import androidBatteryWifi from '../images/android/BatteryWifi.svg';
+import iosBatteryWifi from '../images/ios/BatteryWifi.svg';
+import dynamicIsland from '../images/ios/DynamicIsland.svg';
+import camera from '../images/ios/Camera.svg';
 import { useState, useEffect } from 'react';
 
-export default function ScreenHeader () {
+export default function ScreenHeader ({os}) {
 
     const [today, setDate] = useState(new Date());
     const liveTime = function () {
@@ -29,26 +37,29 @@ export default function ScreenHeader () {
     }
 
     return (
-        <div className="screen-header">
-            <div className='screen-header-time'>
-                <div className='header-time'>
+        <div className={`screen-header ${(os === "android") ? "android-screen-header" : "ios-screen-header"}`}>
+            <div className={`screen-header-time ${(os === "android") ? "android-screen-header-time" : "ios-screen-header-time"}`}>
+                <div className={`header-time ${(os === "android") ? "android-header-time" : "ios-header-time"}`}>
                     <span>{timeFormat().hours}:{timeFormat().minutes}</span>
                 </div>
-                <img src={BatteryWifi}></img>
+                {(os === "android") ? <img src={androidBatteryWifi}></img> : (<><img className="dynamic-island" src={dynamicIsland}></img>
+                <img className='camera' src={camera}></img>
+                <img className="ios-battery-wifi" src={iosBatteryWifi}></img></>)}
             </div>
-            <div className='screen-header-data'>
-                <img src={ArrowBack} className='arrowback'></img>
+            
+            <div className={`screen-header-data ${os}-screen-header-data`}>
+                <img src={(os === "android") ? androidArrowBack : iosArrowBack} className={`arrowback ${os}-arrowback`}></img>
                 <div className='business-data'>
-                    <img src={BusinessLogo} className='business-logo'></img>
+                    <img src={(os === "android") ? androidBusinessLogo : iosBusinessLogo} className={`business-logo ${os}-business-logo`}></img>
                     <div className='business-name-wrapper'>
-                        <span className='business-name'>Tarinika</span>
-                        <img src={Verified} className='verified-logo'></img>
+                        <span className={`business-name ${os}-business-name`}>Tarinika</span>
+                        <img src={(os === "android") ? androidVerified : iosVerified} className='verified-logo'></img>
                     </div>
                 </div>
-                <div className='call-more'>
-                    <img src={Call} className='call'></img>
-                    <img src={More} className='more'></img>
-                </div>
+
+                <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
+                <img src={(os === "android") ? More: iosAudioCall} className='more'></img>
+
             </div>
         </div>
     )

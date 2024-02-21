@@ -1,10 +1,6 @@
 .screen-input {
-    max-width: 269.29px;
-    height: 38.9px;
-    padding: 1.5px 2.99px 1.5px 2.99px;
     display: flex;
-    justify-content: space-between;
-    margin: 2px 0 10px 0;
+    justify-content: space-between;;
     /* background: white; */
     /* border: 1px solid red; */
 }
@@ -19,4 +15,23 @@
     align-self: center;
     max-height: 31.98px;
     /* border: 1px solid red; */
+}
+
+/* android */
+.android-screen-input {
+    width: 269.29px;
+    height: 38.9px;
+    padding: 1.5px 2.99px 1.5px 2.99px;
+    margin: 2px 0 10px 0;
+}
+
+/* ios */
+.ios-screen-input {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.ios-input {
+    height: 100%;
+    width: 100%;
 }

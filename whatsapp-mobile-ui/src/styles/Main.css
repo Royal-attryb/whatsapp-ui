@@ -3,17 +3,14 @@
     /* background: black; */
     height: 100%;
 }
+.body {
+    display: inline-block;
+    position: relative;
+}
 
 .screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 269.29px;
-    width: 90%;
-    height: 90%;
-    max-height: 567px;
-    background: #E8E0D5;
-    border-radius: 8.98px;
+    width: 269.29px;
+    /* height: 567px; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,18 +19,24 @@
     /* border: 1px solid red; */
 }
 
-.phone-body {
-    display: flex;
-    /* border: 1px solid red; */
-    position: relative;
-    max-height: 636px;
-    height: 88%;
+/* android */
+.android-screen {
+    background: #E8E0D5;
+    border-radius: 8.98px;
 }
 
-.img-wrapper img {
-    height: 100%;
+/* ios */
+.ios-screen {
+    width: 275px;
+    height: 596.2px;
+    background: url('../images/ios/MessageBackground.svg');
+    border-radius: 40px;
 }
 
-.img-wrapper {
-    height: 100%;
+.iphone-panel {
+    width: 302px;
+    height: 633px;
+    /* width: 302px;
+    height: 633px; */
+    /* transform: scale(0.7, 0.7); */
 }

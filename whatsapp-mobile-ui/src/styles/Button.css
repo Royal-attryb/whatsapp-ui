@@ -1,10 +1,8 @@
 .button-wrapper {
-    max-width: 210.94px;
-    max-height: 26.18px;
-    border-radius: 2.99px;
+    width: 210.94px;
+    height: 26.18px;
     padding: 5.98px;
     background: white;
-    margin-top: 2.99px;
     text-align: center;
     line-height: 14px;
 }
@@ -15,9 +13,9 @@
     text-decoration: none;
 }
 
-.button-wrapper a:hover {
+/* .button-wrapper a:hover {
     outline: auto;
-}
+} */
 
 .icon {
     max-height: 13px;
@@ -30,4 +28,19 @@
     font-size: 12px;
     font-weight: 400;
     vertical-align: bottom;
+}
+
+/* android */
+.android-button-wrapper {
+    border-radius: 2.99px;
+    margin-top: 2.99px;
+}
+
+/* ios */
+.ios-button-wrapper {
+    border-top: 1px solid grey;
+}
+
+.ios-last-button {
+    border-radius: 0 0 11px 11px;
 }

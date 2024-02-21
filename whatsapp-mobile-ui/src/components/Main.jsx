@@ -2,9 +2,10 @@ import '../styles/Main.css';
 import ScreenHeader from './ScreenHeader';
 import ScreenInput from './ScreenInput';
 import ScreenMessage from './ScreenMessage';
-import phoneBody from '../images/PhoneBody.png';
+import phoneBody from '../images/android/PhoneBody.png';
+import iPhoneBody from '../images/ios/PhoneBody.svg';
 
-export default function Main () {
+export default function Main ({os}) {
     const template = {
         "name": "seasonal_promotion",
         "language": "en_US",
@@ -58,7 +59,7 @@ export default function Main () {
               {
                 "type": "COPY_CODE",
                 "example": "250FF"
-              }
+              }  
             ]
           }
         ]
@@ -66,18 +67,15 @@ export default function Main () {
       
     // console.log("Template", template);
     return (
-        <div className="main-wrapper">
-                <div className='phone-body'>
-                  <div className='img-wrapper'>
-                    <img src={phoneBody}></img>
-                  </div>
-                    <div className="screen">
-                        <ScreenHeader />
-                        <ScreenMessage template={template}/>
-                        <ScreenInput />
-                    </div>
-                </div>
-            
-        </div>
-    )
+      <div className="main-wrapper">
+          <div className={`body ${os}-body`}>
+              {(os === "android") ? <img src={phoneBody}></img> : <img className='iphone-panel' src={iPhoneBody}></img>}
+              <div className={`screen ${os}-screen`}>
+                  <ScreenHeader os ={os}/>
+                  <ScreenMessage template={template} os={os} />
+                  <ScreenInput os={os} />
+              </div>
+          </div>   
+      </div>
+  )
 }
