@@ -142,7 +142,7 @@
 
 .dynamic-island {
     position: relative;
-    width: 33%;
+    height: 50%;
 }
 
 .ios-battery-wifi {
@@ -150,7 +150,7 @@
 }
 
 .camera {
+    height: 50%;
     position: absolute;
     left: 56%;
-    top: 26%;
 }
