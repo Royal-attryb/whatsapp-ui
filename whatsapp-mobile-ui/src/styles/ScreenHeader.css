@@ -7,32 +7,41 @@
 
 .screen-header-data {
     /* width: 269.29px; */
-    height: 47.87px;  
-    padding: 11.97px 8.98px 11.97px 8.98px;
     display: flex;
+    align-items: center;
 }
 
 .business-data {
-    max-width: 100%;
-    max-height: 23.94px;
+    width: 100%;
+    height: 23.94px;
     display: flex;
     align-items: center;
 }
 
 .call {
     margin-left: 2.99px;
-    margin-right: 11.97px;
 }
 
 .call-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     margin-left: auto;
+    margin-right: 5px;
+    height: 100%;
+    gap: 11px;
 }
 
 .arrowback, .business-data, .call, .more {
     align-self: center;
 }
 
+.business-logo-container {
+    height: 120%
+}
+
 .business-logo {
+    height: 100%;
     margin-right: 5.98px;
 }
 
@@ -54,6 +63,24 @@
     vertical-align: middle;
 }
 
+.business-name-wrapper .verified-logo {
+    height: 18px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-container {
+    height: 90%;
+}
+
+.arrow-image-container {
+    height: 80%;
+}
+
 /* android */
 .android-screen-header-time {
     height: 14.96px; 
@@ -64,8 +91,11 @@
 }
 
 .android-screen-header-data {
+    height: 47.87px;  
+    padding: 11.97px 8.98px 11.97px 8.98px;
     background: #085B53;
 }
+
 .android-header-time, .android-business-name {
     color: white;
 }
@@ -96,22 +126,15 @@
     height: 44px; 
     border-radius: 40px 40px 0 0;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 20px;
     background: #F2F2F2;
     justify-content: space-around;
 }
 
 .ios-screen-header-data {
+    height: 36px;  
     background: #F2F2F2;
-    padding: 12px 8.98px;
-}
-
-.ios-screen-header-data img {
-    height: 60%;
-}
-
-.ios-screen-header-data .ios-business-logo {
-    height: 120%;
+    padding: 6px 10px;
 }
 
 .ios-header-time, .ios-business-name {
@@ -119,7 +142,7 @@
 }
 
 .ios-business-name {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 21px;
     letter-spacing: 0em;
@@ -142,7 +165,7 @@
 
 .dynamic-island {
     position: relative;
-    height: 50%;
+    height: 45%;
 }
 
 .ios-battery-wifi {
@@ -150,7 +173,7 @@
 }
 
 .camera {
-    height: 50%;
+    height: 45%;
     position: absolute;
     left: 56%;
 }

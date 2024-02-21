@@ -48,17 +48,25 @@ export default function ScreenHeader ({os}) {
             </div>
             
             <div className={`screen-header-data ${os}-screen-header-data`}>
-                <img src={(os === "android") ? androidArrowBack : iosArrowBack} className={`arrowback ${os}-arrowback`}></img>
+                <div className='img-container arrow-image-container'>
+                    <img src={(os === "android") ? androidArrowBack : iosArrowBack} className={`arrowback ${os}-arrowback`}></img>
+                </div>
                 <div className='business-data'>
-                    <img src={(os === "android") ? androidBusinessLogo : iosBusinessLogo} className={`business-logo ${os}-business-logo`}></img>
+                    <div className='business-logo-container'>
+                        <img src={(os === "android") ? androidBusinessLogo : iosBusinessLogo} className={`business-logo ${os}-business-logo`}></img>
+                    </div>
                     <div className='business-name-wrapper'>
                         <span className={`business-name ${os}-business-name`}>Tarinika</span>
                         <img src={(os === "android") ? androidVerified : iosVerified} className='verified-logo'></img>
                     </div>
                 </div>
                 <div className='call-more'>
-                    <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
-                    <img src={(os === "android") ? More: iosAudioCall} className='more'></img>
+                    <div className='img-container'>
+                        <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
+                    </div>
+                    <div className='img-container'>
+                        <img src={(os === "android") ? More: iosAudioCall} className='more'></img>
+                    </div>
                 </div>
             </div>
         </div>
