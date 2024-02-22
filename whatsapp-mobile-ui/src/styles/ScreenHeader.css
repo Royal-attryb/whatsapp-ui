@@ -29,7 +29,7 @@
     margin-left: auto;
     margin-right: 5px;
     height: 100%;
-    gap: 11px;
+    gap: 18px;
 }
 
 .arrowback, .business-data, .call, .more {
@@ -72,15 +72,6 @@
     height: 100%;
 }
 
-
-.img-container {
-    height: 90%;
-}
-
-.arrow-image-container {
-    height: 80%;
-}
-
 /* android */
 .android-screen-header-time {
     height: 14.96px; 
@@ -117,16 +108,16 @@
 }
 
 .android-arrowback {
-    margin-right: 2.99px;
+    margin-right: 3px;
 }
 
 /* ios */
 .ios-screen-header-time {
     position: relative;
-    height: 44px; 
+    height: 36px; 
     border-radius: 40px 40px 0 0;
-    align-items: center;
-    padding: 0 20px;
+    align-items: flex-end;
+    padding: 4.5px 20px;
     background: #F2F2F2;
     justify-content: space-around;
 }
@@ -134,7 +125,7 @@
 .ios-screen-header-data {
     height: 36px;  
     background: #F2F2F2;
-    padding: 6px 10px;
+    padding: 24px 10px;
 }
 
 .ios-header-time, .ios-business-name {
@@ -151,21 +142,18 @@
 
 .ios-header-time {
     width: 27%;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 14px;
+    line-height: 16px;
     letter-spacing: -0.40799999237060547px;
     text-align: center;
     /* vertical-align: bo; */
 }
 
-.ios-arrowback {
-    margin-right:10px;
-}
-
 .dynamic-island {
     position: relative;
-    height: 45%;
+    width: 90px;
+    height: 25px;
 }
 
 .ios-battery-wifi {
@@ -173,7 +161,21 @@
 }
 
 .camera {
-    height: 45%;
+    height: 25px;
     position: absolute;
     left: 56%;
+}
+
+.ios-img-container {
+    height: 22px;
+
+    /* width: 18px; */
+}
+
+.ios-img-call-container {
+    width: 26px;
+}
+
+.ios-img-arrow-container {
+    margin-right: 16px;
 }

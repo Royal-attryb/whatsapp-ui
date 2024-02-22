@@ -19,7 +19,6 @@
 .icon {
     height: 13px;
     width: 13px;
-    margin-right: 2.99px;
 }
 
 .copycode {
@@ -46,6 +45,10 @@
     color: #0096DE;
 }
 
+.android-icon {
+    margin-right: 3px;
+}
+
 /* ios */
 .ios-button-wrapper {
     border-top: 1px solid #e8e8e9;
@@ -61,4 +64,8 @@
 
 .ios-last-button {
     border-radius: 0 0 11px 11px;
+}
+
+.ios-icon {
+    margin-right: 6px;
 }

@@ -48,7 +48,7 @@ export default function ScreenHeader ({os}) {
             </div>
             
             <div className={`screen-header-data ${os}-screen-header-data`}>
-                <div className='img-container arrow-image-container'>
+                <div className={`img-container ${os}-img-container ${os}-img-arrow-container`}>
                     <img src={(os === "android") ? androidArrowBack : iosArrowBack} className={`arrowback ${os}-arrowback`}></img>
                 </div>
                 <div className='business-data'>
@@ -61,10 +61,10 @@ export default function ScreenHeader ({os}) {
                     </div>
                 </div>
                 <div className='call-more'>
-                    <div className='img-container'>
+                    <div className={`img-container ${os}-img-container`}>
                         <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
                     </div>
-                    <div className='img-container'>
+                    <div className={`img-container ${os}-img-container ${os}-img-call-container`}>
                         <img src={(os === "android") ? More: iosAudioCall} className='more'></img>
                     </div>
                 </div>
