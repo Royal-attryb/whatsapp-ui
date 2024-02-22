@@ -1,6 +1,6 @@
 import '../styles/Body.css';
 
-export default function Body ({body}) {
+export default function Body ({body, os}) {
 
     // const regex = /{{([0-9]+)}}/g;
     // const examples = body.example.body_text[0];
@@ -13,6 +13,6 @@ export default function Body ({body}) {
     // const sampleText = body.text.replaceAll(regex, replacer);
     // console.log(examples);
     return (
-        <p className='body-text'>{body.text}</p>
+        <p className={`body-text ${os}-body-text`}>{body.text}</p>
     );
 }

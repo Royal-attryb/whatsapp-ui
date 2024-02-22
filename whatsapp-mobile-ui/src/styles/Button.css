@@ -16,21 +16,9 @@
     outline: auto;
 } */
 
-.icon {
-    height: 13px;
-    width: 13px;
-}
-
 .copycode {
     height: 14px;
     width: 14px;
-}
-
-.button-wrapper p {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 13px;
 }
 
 /* android */
@@ -52,15 +40,22 @@
 /* ios */
 .ios-button-wrapper {
     border-top: 1px solid #e8e8e9;
-    padding: 9px;
+    padding: 8.5px;
     height: 32px;
+    line-height: 15px;
+    font-size: 14px;
+    /* font-size: 0.7vw;
+    line-height: 15px; */
 }
 
 .ios-button-wrapper a {
     color: #0178ff;
-    line-height: 12px;
-    font-size: 12px;
 }
+
+.ios-button-wrapper a p {
+    font-weight: 400;
+}
+
 
 .ios-last-button {
     border-radius: 0 0 11px 11px;
@@ -68,4 +63,6 @@
 
 .ios-icon {
     margin-right: 6px;
+    height: 15px;
+    width: 15px;
 }

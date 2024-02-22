@@ -1,6 +1,7 @@
 .screen-message {
     width: calc(100% + 17px);
-    max-height: 456.81px;
+    /* max-height: 456.81px; */
+    height: 100%;
     overflow-y: scroll;
     margin-bottom: auto;
 }

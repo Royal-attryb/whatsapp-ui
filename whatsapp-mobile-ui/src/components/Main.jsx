@@ -23,7 +23,7 @@ export default function Main ({os}) {
           },
           {
             "type": "BODY",
-            "text": "Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise.",
+            "text": "Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise.",
             "example": {
               "body_text": [
                 [
@@ -45,12 +45,54 @@ export default function Main ({os}) {
               },
               {
                 "type": "PHONE_NUMBER",
-                "text": "Call",
+                "text": "Contact us",
                 "phone_number": "15550051310"
               },
               {
                 "type": "URL",
-                "text": "Shop Now",
+                "text": "Link action",
+                "url": "https://www.luckyshrub.com/shop?promo={{1}}",
+                "example": [
+                  "summer2023"
+                ]
+              },
+              {
+                "type": "COPY_CODE",
+                "example": "250FF"
+              },
+              {
+                "type": "QUICK_REPLY",
+                "text": "Unsubscribe from Promos"
+              },
+              {
+                "type": "PHONE_NUMBER",
+                "text": "Contact us",
+                "phone_number": "15550051310"
+              },
+              {
+                "type": "URL",
+                "text": "Link action",
+                "url": "https://www.luckyshrub.com/shop?promo={{1}}",
+                "example": [
+                  "summer2023"
+                ]
+              },
+              {
+                "type": "COPY_CODE",
+                "example": "250FF"
+              },
+              {
+                "type": "QUICK_REPLY",
+                "text": "Unsubscribe from Promos"
+              },
+              {
+                "type": "PHONE_NUMBER",
+                "text": "Contact us",
+                "phone_number": "15550051310"
+              },
+              {
+                "type": "URL",
+                "text": "Link action",
                 "url": "https://www.luckyshrub.com/shop?promo={{1}}",
                 "example": [
                   "summer2023"

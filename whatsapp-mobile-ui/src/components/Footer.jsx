@@ -1,8 +1,8 @@
 import '../styles/Footer.css';
 
-export default function Footer ({footer}) {
+export default function Footer ({footer, os}) {
     // console.log(footer);
     return (
-        <p className='footer'>{footer.text}</p>
+        <p className={`footer ${os}-footer`}>{footer.text}</p>
     )
 }

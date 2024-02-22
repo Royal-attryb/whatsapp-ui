@@ -4,5 +4,17 @@
 }
 
 .text {
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.android-text {
+
+}
+
+.ios-text {
+    font-size: 16px;
+    line-height: 20px;
+    /* font-size: 1vw;
+    line-height: 1.5vw; */
+    margin-bottom: 20px;
 }

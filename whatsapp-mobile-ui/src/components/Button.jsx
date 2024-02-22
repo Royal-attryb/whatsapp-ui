@@ -7,13 +7,13 @@ import ioscallIcon from '../images/ios/call-icon.svg';
 import ioscopyIcon from '../images/ios/copycode-icon.svg';
 
 export default function Button ({button, os, lastbtn}) {
-    // console.log(button);
+    console.log(button);
 
     const btnsObj = {
         'COPY_CODE': { "icon": (os === 'android') ? androidcopyIcon : ioscopyIcon, "label": "Copy Code" },
-        'QUICK_REPLY' : {"icon": '', "label": "Hello"},
-        'PHONE_NUMBER': { "icon": (os === 'android') ? androidcallIcon : ioscallIcon, "label": "Contact us" },
-        'URL': { "icon": (os === 'android') ? androidurlIcon : iosurlIcon, "label": "Click here"}
+        'QUICK_REPLY' : {"icon": '', "label": button.text},
+        'PHONE_NUMBER': { "icon": (os === 'android') ? androidcallIcon : ioscallIcon, "label": button.text },
+        'URL': { "icon": (os === 'android') ? androidurlIcon : iosurlIcon, "label": button.text}
     };
 
     console.log(btnsObj[button.type].icon);

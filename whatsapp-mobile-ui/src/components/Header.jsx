@@ -2,10 +2,10 @@ import '../styles/Header.css';
 import ImgFallback from '../images/android/ImgFallback.svg';
 import DocFallback from '../images/android/DocFallback.svg';
 
-export default function Header ({header}) {
+export default function Header ({header, os}) {
 
     console.log("Header", header);
-    const text = (<p className='text'>{header.text}</p>);
+    const text = (<p className={`text ${os}-text`}>{header.text}</p>);
     const image = (
         <div className='media-container'>
             <img className='media' src={ImgFallback}></img>

@@ -22,12 +22,10 @@ export default function Message ({template, os}) {
             <div className={`message-wrapper ${os}-message-wrapper`}>
                 <div className='message-content-wrapper'>
                     <div className={`message-content ${os}-message-content ${(buttons.length == 0 && os === "ios") ? "ios-no-buttons" : ""}`}>
-                        <Header header={header} />
-                        <br />
-                        <Body body={body} />
-                        <br />
-                        <Footer footer={footer} />
-                        <TimeStamp />
+                        <Header header={header} os={os} />
+                        <Body body={body} os={os} />
+                        <Footer footer={footer} os={os} />
+                        <TimeStamp os={os} />
                     </div>
                     <div className="buttons ios-buttons">
                         {buttons.map((button, index) => {if (index == buttons.length - 1) {
