@@ -56,6 +56,9 @@
 }
 
 .android-body {
+    aspect-ratio: 0.475;
+    max-width: 270px;
+    max-height: 567px;
     background-image: url("../images/android/PhoneBody.png");
     padding: 30px 10px;
 }
@@ -66,7 +69,7 @@
     background: url('../images/ios/MessageBackground.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 40px;
+    border-radius: 55px;
 }
 
 .ios-body {

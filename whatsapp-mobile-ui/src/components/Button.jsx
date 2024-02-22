@@ -20,7 +20,7 @@ export default function Button ({button, os, lastbtn}) {
     const btn = (
         <div className={`button-wrapper ${os}-button-wrapper ${(lastbtn && os === 'ios') ? "ios-last-button" : ""}`}>
             <a href="#">
-                {(btnsObj[button.type].icon !== '') ? <img className='icon' src={btnsObj[button.type].icon}></img> : <></>}
+                {(btnsObj[button.type].icon !== '') ? <img className={`icon ${(button.type === 'COPY_CODE') ? "copycode" : ""}`} src={btnsObj[button.type].icon}></img> : <></>}
                 <p>{btnsObj[button.type].label}</p>
             </a>
         </div>
