@@ -37,7 +37,12 @@
 }
 
 .business-logo-container {
-    height: 120%
+    height: 120%;
+}
+
+.business-name-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .business-logo {
@@ -58,13 +63,13 @@
     vertical-align: middle;
 }
 
-.business-name, .verified-logo {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .business-name-wrapper .verified-logo {
     height: 18px;
+}
+
+.verified-logo {
+    height: 18px;
+    width: 18px;
 }
 
 .img-container img {

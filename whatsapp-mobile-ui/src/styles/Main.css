@@ -6,7 +6,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .phonebody-wrapper {
@@ -31,7 +31,7 @@
     background-position: center;
     z-index: 1;
     background-size: 100% 100%;
-    height: 85%;
+    height: calc(100% - 12px);
     /* border: 1px solid red; */
     /* margin: 5%; */
 }

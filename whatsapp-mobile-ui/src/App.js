@@ -4,11 +4,11 @@ import Preview from './pages/Preview.jsx';
 function App() {
   return (
     <>
-      {/* <Preview /> */}
-      <div style={{"display": "flex"}}>
+      <Preview />
+      {/* <div style={{"display": "flex"}}>
         <Main os="ios"/>
         <Main os="android" />
-      </div>
+      </div> */}
     </>
   );
 }
