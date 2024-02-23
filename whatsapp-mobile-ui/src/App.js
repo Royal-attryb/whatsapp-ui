@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       {/* <Preview /> */}
-      <OsToggle onToggle={handleToggle} />
+      {/* <OsToggle onToggle={handleToggle} /> */}
       <Main os={os} />
       {/* <div style={{"display": "flex"}}>
         <Main os="ios"/>

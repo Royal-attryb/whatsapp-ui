@@ -13,7 +13,7 @@ export default function Main ({os}) {
         "components": [
           {
             "type": "HEADER",
-            "format": "TEXT",
+            "format": "IMAGE",
             "text": "Our {{1}} is on!",
             "example": {
               "header_text": [
@@ -23,7 +23,14 @@ export default function Main ({os}) {
           },
           {
             "type": "BODY",
-            "text": "Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise. Shop now through {{1}} and use code {{2}} to get {{3}} off of all merchandise.",
+            "text": `Hi {{1}}, 
+
+            ✨Ready to add some glamour to your style? Tarinika's Trending Style of the Month is here to help! From minimal everyday jewelry to regal festive designs, we have the perfect pieces to complete your look. Don't wait any longer, start shopping now! 
+            
+            ✅ 1-year warranty on all products 
+            ✅ Trusted by 75k+ women worldwide 
+            ✅ Personalization available 
+            ✅ 24X7 customer support`,
             "example": {
               "body_text": [
                 [
@@ -34,7 +41,7 @@ export default function Main ({os}) {
           },
           {
             "type": "FOOTER",
-            "text": "Use the buttons below to manage your marketing subscriptions"
+            "text": "Reply STOP to unsubscribe."
           },
           {
             "type":"BUTTONS",
@@ -50,58 +57,16 @@ export default function Main ({os}) {
               },
               {
                 "type": "URL",
-                "text": "Link action",
+                "text": "Shop Now",
                 "url": "https://www.luckyshrub.com/shop?promo={{1}}",
                 "example": [
                   "summer2023"
                 ]
               },
-              {
-                "type": "COPY_CODE",
-                "example": "250FF"
-              },
-              {
-                "type": "QUICK_REPLY",
-                "text": "Unsubscribe from Promos"
-              },
-              {
-                "type": "PHONE_NUMBER",
-                "text": "Contact us",
-                "phone_number": "15550051310"
-              },
-              {
-                "type": "URL",
-                "text": "Link action",
-                "url": "https://www.luckyshrub.com/shop?promo={{1}}",
-                "example": [
-                  "summer2023"
-                ]
-              },
-              {
-                "type": "COPY_CODE",
-                "example": "250FF"
-              },
-              {
-                "type": "QUICK_REPLY",
-                "text": "Unsubscribe from Promos"
-              },
-              {
-                "type": "PHONE_NUMBER",
-                "text": "Contact us",
-                "phone_number": "15550051310"
-              },
-              {
-                "type": "URL",
-                "text": "Link action",
-                "url": "https://www.luckyshrub.com/shop?promo={{1}}",
-                "example": [
-                  "summer2023"
-                ]
-              },
-              {
-                "type": "COPY_CODE",
-                "example": "250FF"
-              }  
+              // {
+              //   "type": "COPY_CODE",
+              //   "example": "250FF"
+              // }  
             ]
           }
         ]
