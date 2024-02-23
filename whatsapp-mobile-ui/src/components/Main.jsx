@@ -109,7 +109,7 @@ export default function Main ({os}) {
       
     // console.log("Template", template);
     return (
-      <div className="main-wrapper">
+      <div className={`main-wrapper ${os}-main-wrapper`}>
           <div className={`body ${os}-body`}>
               <div className={`screen ${os}-screen`}>
                   <ScreenHeader os ={os} />
