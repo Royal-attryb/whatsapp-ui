@@ -4,7 +4,8 @@ import Preview from './pages/Preview.jsx';
 function App() {
   return (
     <>
-      <Preview />
+      {/* <Preview /> */}
+      <Main os="ios"/>
       {/* <div style={{"display": "flex"}}>
         <Main os="ios"/>
         <Main os="android" />
