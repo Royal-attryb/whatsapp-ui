@@ -37,9 +37,9 @@ export default function ScreenHeader ({os}) {
     }
 
     return (
-        <div className={`screen-header ${(os === "android") ? "android-screen-header" : "ios-screen-header"}`}>
-            <div className={`screen-header-time ${(os === "android") ? "android-screen-header-time" : "ios-screen-header-time"}`}>
-                <div className={`header-time ${(os === "android") ? "android-header-time" : "ios-header-time"}`}>
+        <div className={`screen-header ${os}-screen-header`}>
+            <div className={`screen-header-time ${os}-screen-header-time`}>
+                <div className={`header-time ${os}-header-time`}>
                     <span>{timeFormat().hours}:{timeFormat().minutes}</span>
                 </div>
                 {(os === "android") ? <img src={androidBatteryWifi}></img> : (<><img className="dynamic-island" src={dynamicIsland}></img>
@@ -51,16 +51,16 @@ export default function ScreenHeader ({os}) {
                 <div className={`img-container ${os}-img-container ${os}-img-arrow-container`}>
                     <img src={(os === "android") ? androidArrowBack : iosArrowBack} className={`arrowback ${os}-arrowback`}></img>
                 </div>
-                <div className='business-data'>
-                    <div className='business-logo-container'>
+                <div className={`business-data ${os}-business-data`}>
+                    <div className={`${os}-business-logo-container`}>
                         <img src={(os === "android") ? androidBusinessLogo : iosBusinessLogo} className={`business-logo ${os}-business-logo`}></img>
                     </div>
-                    <div className='business-name-wrapper'>
+                    <div className={`business-name-wrapper ${os}-business-name-wrapper`}>
                         <span className={`business-name ${os}-business-name`}>Tarinika</span>
-                        <img src={(os === "android") ? androidVerified : iosVerified} className='verified-logo'></img>
+                        <img src={(os === "android") ? androidVerified : iosVerified} className={`${os}-verified-logo`}></img>
                     </div>
                 </div>
-                <div className='call-more'>
+                <div className={`call-more ${os}-call-more`}>
                     <div className={`img-container ${os}-img-container`}>
                         <img src={(os === "android") ? Call : iosVideoCall} className='call'></img>
                     </div>

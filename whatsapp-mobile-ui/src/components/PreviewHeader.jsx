@@ -2,9 +2,9 @@ import React from 'react'
 import featuredIcon from '../images/featuredIcon.svg';
 import cross from '../images/cross.svg';
 import '../styles/PreviewHeader.css';
-
-const PreviewHeader = ({onCancel}) => {
-
+import OsToggle from './OsToggle';
+import { useState } from 'react';
+const PreviewHeader = ({onCancel, onToggle}) => {
   function handleCancel () {
     onCancel();
   }
@@ -16,7 +16,7 @@ const PreviewHeader = ({onCancel}) => {
         </div>
         <div className='previewcontent-container'>
             <p>Preview</p>
-            
+            {/* <OsToggle onToggle={onToggle} /> */}
               <div className='cross-container'> 
                 <button onClick={handleCancel}>
                     <img className='cross' src={cross}></img>

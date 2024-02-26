@@ -13,12 +13,14 @@
 
 .business-data {
     width: 100%;
-    height: 24px;
     display: flex;
     align-items: center;
 }
+.ios-business-data {
+    height: 24px;
+}
 
-.call {
+.ios-call {
     margin-left: 3px;
 }
 
@@ -27,8 +29,11 @@
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
-    margin-right: 5px;
     height: 100%;
+}
+
+.ios-call-more {
+    margin-right: 5px;
     gap: 18px;
 }
 
@@ -36,7 +41,7 @@
     align-self: center;
 }
 
-.business-logo-container {
+.ios-business-logo-container {
     height: 120%;
 }
 
@@ -45,12 +50,12 @@
     align-items: center;
 }
 
-.business-logo {
+.ios-business-logo {
     height: 100%;
     margin-right: 6px;
 }
 
-.business-name {
+.ios-business-name {
     margin-right: 3px;
 }
 
@@ -63,11 +68,11 @@
     vertical-align: middle;
 }
 
-.business-name-wrapper .verified-logo {
+.ios-business-name-wrapper .ios-verified-logo {
     height: 18px;
 }
 
-.verified-logo {
+.ios-verified-logo {
     height: 18px;
     width: 18px;
 }
@@ -112,10 +117,47 @@
     text-align: left;
 }
 
-.android-arrowback {
+.android-img-arrow-container {
+    height: 24px;
+    width: 24px;
     margin-right: 3px;
 }
 
+.android-business-data {
+    height: 24px;
+}
+
+.android-business-logo-container {
+    height: 24px;
+    width: 24px;
+    margin-right: 6px;
+}
+
+.android-business-name-wrapper {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    gap: 4px;
+}
+
+.android-verified-logo {
+    width: 11px;
+    height: 11px;
+}
+
+.android-call-more {
+    width: 60px;
+    height: 18px;
+    gap: 10px;
+}
+
+.android-img-container {
+    height: 100%;
+}
+
+.android-business-logo {
+    height: 100%;
+}
 /* ios */
 .ios-screen-header-time {
     position: relative;

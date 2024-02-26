@@ -5,7 +5,7 @@ import ScreenMessage from './ScreenMessage';
 import phoneBody from '../images/android/PhoneBody.png';
 import iPhoneBody from '../images/ios/PhoneBody.svg';
 
-export default function Main ({os}) {
+export default function Main ({os, preview}) {
     const template = {
         "name": "seasonal_promotion",
         "language": "en_US",
@@ -26,7 +26,7 @@ export default function Main ({os}) {
             "text": `Hi {{1}}, 
 
             ✨Ready to add some glamour to your style? Tarinika's Trending Style of the Month is here to help! From minimal everyday jewelry to regal festive designs, we have the perfect pieces to complete your look. Don't wait any longer, start shopping now! 
-            
+
             ✅ 1-year warranty on all products 
             ✅ Trusted by 75k+ women worldwide 
             ✅ Personalization available 
@@ -75,8 +75,8 @@ export default function Main ({os}) {
     // console.log("Template", template);
     return (
       <div className={`main-wrapper ${os}-main-wrapper`}>
-          <div className={`body ${os}-body`}>
-              <div className={`screen ${os}-screen`}>
+          <div className={`${preview ? `${os}-preview-body` : "body"} ${os}-body`} >
+              <div className={`screen ${os}-screen`} >
                   <ScreenHeader os ={os} />
                   <ScreenMessage template={template} os={os} />
                   <ScreenInput os={os} />

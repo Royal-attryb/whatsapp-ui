@@ -10,12 +10,12 @@
     height: 100vh;
     /* min-width: 400px;
     width: 25vw; */
-    width: 480px;
+    width: 350px;
     right: 0;
 }
 
 .hidesidebar {
-    right: -480px;
+    right: -350px;
 }
 
 .empty {

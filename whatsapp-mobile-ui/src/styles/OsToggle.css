@@ -11,23 +11,23 @@
 }
 
 .toggle__input::before {
-    content: url('../images/android-logo.svg');
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: left 0.2s ease-in;
-    border-radius: 10px;
-}
-
-.toggle__input:checked::before {
     content: url('../images/apple-logo.svg');
     width: 20px;
     height: 20px;
     background-color: aqua;
     position: absolute;
     top: 0;
+    left: 0;
+}
+
+.toggle__input:checked::before {
+    content: url('../images/android-logo.svg');
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 0;
     left: 30px;
+    transition: left 0.2s ease-in;
+    border-radius: 10px;
 }
