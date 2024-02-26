@@ -13,7 +13,7 @@ export default function Main ({os, preview}) {
         "components": [
           {
             "type": "HEADER",
-            "format": "VIDEO",
+            "format": "IMAGE",
             "example": {
               "header_handle": [
                 ""

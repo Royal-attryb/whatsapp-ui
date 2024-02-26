@@ -5,46 +5,26 @@ import DocFallback from '../images/DocFallback.svg';
 
 export default function Header ({header, os}) {
 
+    const headersObj = {
+        "IMAGE": ImgFallback,
+        "VIDEO": VideoFallback,
+        "DOCUMENT": DocFallback
+    }
+
     console.log("Header", header.example.header_handle[0]);
     const text = (
         <p className={`text ${os}-text`}>{header.text}</p>
     );
 
-    const image = (
+    const media = (
         <div className='media-container'>
-            <img className='media' src={header.example.header_handle[0] || ImgFallback}></img>
+            <img className='media' src={headersObj[header.format]}></img>
         </div>
     );
-
-    const video = (
-        <div className='media-container'>
-            <img className='media' src={VideoFallback}></img>
-        </div>
-    );
-
-    const doc = (
-        <div className='media-container'>
-            <img className='media' src={DocFallback} ></img>
-        </div>
-    );
-
-    const handleDisplay = () => {
-        if (header.format === 'TEXT')
-            return text;
-
-        else if (header.format === 'IMAGE')
-            return image;
-
-        else if (header.format === 'VIDEO')
-            return video;
-
-        else if (header.format === 'DOCUMENT')
-            return doc;
-    }
 
     return (
         <>
-            {handleDisplay()}
+            {(header.format === "TEXT") ? text : media}
         </>
     )
 }
