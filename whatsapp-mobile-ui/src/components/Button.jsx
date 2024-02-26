@@ -7,7 +7,7 @@ import ioscallIcon from '../images/ios/call-icon.svg';
 import ioscopyIcon from '../images/ios/copycode-icon.svg';
 
 export default function Button ({button, os, lastbtn}) {
-    console.log(button);
+    // console.log(button);
 
     const btnsObj = {
         'COPY_CODE': { "icon": (os === 'android') ? androidcopyIcon : ioscopyIcon, "label": "Copy Code" },
@@ -16,7 +16,7 @@ export default function Button ({button, os, lastbtn}) {
         'URL': { "icon": (os === 'android') ? androidurlIcon : iosurlIcon, "label": button.text}
     };
 
-    console.log(btnsObj[button.type].icon);
+    // console.log(btnsObj[button.type].icon);
     const btn = (
         <div className={`button-wrapper ${os}-button-wrapper ${(lastbtn && os === 'ios') ? "ios-last-button" : ""}`}>
             <a href="#">

@@ -16,7 +16,7 @@ const Preview = () => {
   }
 
   function handleKeyDown(key) {
-    console.log(key);
+    // console.log(key);
     if (key.key === 'Escape')
       setSidebarVisibility(false);
   }

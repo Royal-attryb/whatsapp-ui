@@ -1,26 +1,30 @@
 import '../styles/Header.css';
-import ImgFallback from '../images/android/ImgFallback.svg';
-import DocFallback from '../images/android/DocFallback.svg';
+import ImgFallback from '../images/ImgFallback.svg';
+import VideoFallback from '../images/VideoFallback.svg';
+import DocFallback from '../images/DocFallback.svg';
 
 export default function Header ({header, os}) {
 
-    console.log("Header", header);
-    const text = (<p className={`text ${os}-text`}>{header.text}</p>);
+    console.log("Header", header.example.header_handle[0]);
+    const text = (
+        <p className={`text ${os}-text`}>{header.text}</p>
+    );
+
     const image = (
         <div className='media-container'>
-            <img className='media' src={ImgFallback}></img>
+            <img className='media' src={header.example.header_handle[0] || ImgFallback}></img>
         </div>
     );
 
     const video = (
         <div className='media-container'>
-            <video className='media' src={ImgFallback}></video>
+            <img className='media' src={VideoFallback}></img>
         </div>
     );
 
     const doc = (
         <div className='media-container'>
-            <img className='media' src={DocFallback}></img>
+            <img className='media' src={DocFallback} ></img>
         </div>
     );
 

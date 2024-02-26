@@ -13,11 +13,10 @@ export default function Main ({os, preview}) {
         "components": [
           {
             "type": "HEADER",
-            "format": "IMAGE",
-            "text": "Our {{1}} is on!",
+            "format": "VIDEO",
             "example": {
-              "header_text": [
-                "Summer Sale"
+              "header_handle": [
+                ""
               ]
             }
           },

@@ -46,6 +46,7 @@
         transform-origin: center;
     }
 }
+
 @media screen and (max-width:768px) {
     .ios-preview-body {
         transform: scale(0.4, 0.4);
