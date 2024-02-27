@@ -1,4 +1,4 @@
-import '../styles/ScreenHeader.css';
+import './ScreenHeader.css';
 import androidArrowBack from '../images/android/ArrowBack.svg';
 import iosArrowBack from '../images/ios/ArrowBack.svg';
 import androidBusinessLogo from '../images/android/BusinessLogo.svg';

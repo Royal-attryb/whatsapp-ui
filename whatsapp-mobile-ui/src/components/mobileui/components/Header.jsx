@@ -1,4 +1,4 @@
-import '../styles/Header.css';
+import './Header.css';
 import ImgFallback from '../images/ImgFallback.svg';
 import VideoFallback from '../images/VideoFallback.svg';
 import DocFallback from '../images/DocFallback.svg';
@@ -22,9 +22,17 @@ export default function Header ({header, os}) {
         </div>
     );
 
+    function displayHeader() {
+        if (header.format === "TEXT")
+            return text;
+
+        else 
+            return media;
+    }
+
     return (
         <>
-            {(header.format === "TEXT") ? text : media}
+            {displayHeader()}
         </>
     )
 }

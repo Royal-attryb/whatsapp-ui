@@ -1,4 +1,4 @@
-import '../styles/Body.css';
+import './Body.css';
 
 export default function Body ({body, os}) {
 

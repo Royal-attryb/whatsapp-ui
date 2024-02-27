@@ -1,4 +1,4 @@
-import '../styles/ScreenMessage.css';
+import './ScreenMessage.css';
 import Messages from './Messages';
 
 export default function ScreenMessage ({template, os}) {

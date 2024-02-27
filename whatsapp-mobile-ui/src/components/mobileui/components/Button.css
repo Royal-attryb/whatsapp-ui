@@ -1,0 +1,101 @@
+.btn-wrapper .Button[data-variant=solid][data-colorscheme=primary] {
+    background: white;
+    border: 0;
+    border-top: 1px solid #e8e8e9;
+    border-radius: inherit;
+    box-shadow: none;
+}
+
+.btn-wrapper .Button[data-variant=solid] {
+    color: inherit;
+    padding: 8.5px;
+}
+
+.btn-wrapper .Button[data-variant=solid][data-colorscheme=primary]:hover {
+    background: white;
+    border: 0;
+    border-top: 1px solid #e8e8e9;
+    transition: none;
+}
+
+.btn-wrapper .Button {
+    align-items: center;
+    border: none;
+    display: unset;
+    gap: 0;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    width: unset;
+    cursor: default;
+    font-family: inherit;
+    font-style: normal;
+}
+
+.btn-wrapper .button-wrapper {
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+.btn-wrapper .button-wrapper a {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+/* .button-wrapper a:hover {
+    outline: auto;
+} */
+
+.copycode {
+    height: 14px;
+    width: 14px;
+}
+
+/* android */
+.android-button-wrapper {
+    height: 25.18px;
+    border-radius: 2.99px;
+    margin-top: 2.99px;
+    padding: 5.98px;
+}
+
+.android-button-wrapper a {
+    color: #0096DE;
+}
+
+.android-icon {
+    margin-right: 3px;
+}
+
+/* ios */
+.btn-wrapper .ios-button-wrapper {
+    background: white;
+    height: 32px;
+    line-height: 15px;
+    font-size: 14px;
+    /* font-size: 0.7vw;
+    line-height: 15px; */
+}
+
+.btn-wrapper .ios-button-wrapper a {
+    color: #0178ff;
+}
+
+.btn-wrapper .ios-button-wrapper a p {
+    font-weight: 400;
+}
+
+.btn-wrapper:last-child {
+    border-radius: 0 0 11px 11px;
+}
+
+.ios-icon {
+    margin-right: 6px;
+    height: 15px;
+    width: 15px;
+}

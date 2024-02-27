@@ -1,4 +1,4 @@
-import '../styles/Footer.css';
+import './Footer.css';
 
 export default function Footer ({footer, os}) {
     // console.log(footer);

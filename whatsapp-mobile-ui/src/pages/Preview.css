@@ -16,7 +16,7 @@
     right: 0;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:992px) {
     .previewslider-container {
         width: 300px;
     }
@@ -24,6 +24,12 @@
 @media screen and (max-width:768px) {
     .previewslider-container {
         width: 250px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .previewslider-container {
+        width: 210px;
     }
 }
 

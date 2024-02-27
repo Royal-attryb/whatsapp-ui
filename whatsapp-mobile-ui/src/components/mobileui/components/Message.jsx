@@ -1,4 +1,4 @@
-import '../styles/Message.css';
+import './Message.css';
 import Body from './Body';
 import Button from './Button';
 import Footer from './Footer';
@@ -21,17 +21,16 @@ export default function Message ({template, os}) {
             </span>
             <div className={`message-wrapper ${os}-message-wrapper`}>
                 <div className='message-content-wrapper'>
-                    <div className={`message-content ${os}-message-content ${(buttons.length == 0 && os === "ios") ? "ios-no-buttons" : ""}`}>
+                    <div className={`message-content ${os}-message-content`}>
                         <Header header={header} os={os} />
                         <Body body={body} os={os} />
                         <Footer footer={footer} os={os} />
                         <TimeStamp os={os} />
                     </div>
                     <div className="buttons ios-buttons">
-                        {buttons.map((button, index) => {if (index == buttons.length - 1) {
-                            return <Button button={button} os={os} lastbtn="true" />  
-                        }
-                        return <Button button={button} os={os} />})}
+                        {buttons.map((button, index) => {
+                            return <Button button={button} os={os} />  
+                        })}
                     </div>
                 </div>              
             </div>

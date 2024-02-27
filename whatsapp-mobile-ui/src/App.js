@@ -1,4 +1,4 @@
-import Main from './components/Main.jsx';
+import Main from './components/mobileui/components/Main.jsx';
 import Preview from './pages/Preview.jsx';
 import OsToggle from './components/OsToggle.jsx';
 import { useState } from 'react';
@@ -13,6 +13,7 @@ function App() {
         <Main os="ios"/>
         <Main os="android" />
       </div> */}
+      {/* <Main /> */}
     </>
   );
 }

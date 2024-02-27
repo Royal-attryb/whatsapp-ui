@@ -1,5 +1,4 @@
 import React from 'react'
-import Main from '../components/Main.jsx';
 import PreviewSlider from '../components/PreviewSlider.jsx';
 import './Preview.css';
 import { useState } from 'react';

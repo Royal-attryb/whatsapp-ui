@@ -44,7 +44,7 @@
     align-self: flex-end;
 }
 
-.ios-no-buttons {
+.ios-message-content:last-child {
     border-radius: 11px 11px 11px 11px;
 }
 

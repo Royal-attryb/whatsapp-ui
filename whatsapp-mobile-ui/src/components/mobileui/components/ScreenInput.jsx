@@ -1,4 +1,4 @@
-import '../styles/ScreenInput.css';
+import './ScreenInput.css';
 import Message from '../images/android/Message.svg';
 import Microphone from '../images/android/Microphone.svg';
 import input from '../images/ios/Input.svg';
