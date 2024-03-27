@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Preview />
+
       {/* <Main os={os} /> */}
       {/* <div style={{"display": "flex"}}>
         <Main os="ios"/>
